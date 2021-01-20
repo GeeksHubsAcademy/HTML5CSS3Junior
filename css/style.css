@@ -1,0 +1,58 @@
+
+/*------CLASES------*/
+
+.divGeneral {
+    height: 15em;
+    width: 24em;
+
+    background-color: lightblue;
+
+    /*Al ser divGeneral padre de los 4
+    contenedores hijos, dispone de display flex
+    y flex direction row (fila) para muestrearlos en forma
+    de fila*/
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorHijo{
+    height: 15em;
+    width: 6em;
+}
+
+.hijo1{
+    background-color: red;
+}
+
+.hijo2{
+    background-color: green;
+}
+
+.hijo3{
+    background-color: grey;
+}
+
+.hijo4{
+    background-color: yellow;
+
+    /*El div hijo4 es a su vez padre de los divs nietos,
+    por lo tanto hacemos uso de display flex y flex direction column
+    para esta vez disponer que se muestren en columna.*/
+    display: flex;
+    flex-direction: column;
+}
+
+.divNieto {
+    width: 6em;
+    height: 7.5em;
+}
+
+.nieto1 {
+    background-color: pink;
+    border-radius: 1em 4em 3em 2em;
+}
+
+.nieto2 {
+    background-color: white;
+    border-radius: 12em 2em 5em 8em; 
+}   
